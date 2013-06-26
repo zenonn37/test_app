@@ -1,3 +1,5 @@
 class Section < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :name, :position,  :visiable, :content
+  belongs_to :page
+
 end
